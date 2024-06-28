@@ -1,18 +1,17 @@
-## README
+# File Compression and Decompression Tool
 
-# File Compression Tool
+This is a simple Rust program to compress and decompress files using Gzip compression. It reads a source file, compresses or decompresses it, and writes the compressed or decompressed data to a destination file.
 
-This is a simple Rust program to compress files using Gzip compression. It reads a source file, compresses it, and writes the compressed data to a destination file.
+## Usage
 
-### Usage
+To use this tool, you need to have Rust installed on your machine. You can run the program with the following commands:
 
-To use this tool, you need to have Rust installed on your machine. You can run the program with the following command:
+### Compression
 
 ```sh
-cargo run -- <src> <dst>
+cargo run -- compress <src> <dst>
 
-
-cargo run -- input.txt output.gz
+cargo run -- decompress <src> <dst>
 
 [dependencies]
 flate2 = "1.0"
